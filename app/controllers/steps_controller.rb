@@ -1,6 +1,6 @@
 class StepsController < ApplicationController
   # before_action :set_step, only: [:show, :edit, :update, :destroy]
-
+  protect_from_forgery :except => [:sendStep]
   # GET /steps
   # GET /steps.json
   def index
@@ -62,6 +62,16 @@ class StepsController < ApplicationController
   end
 
   def sendStep
+      # データの取得
+      step_source_code = params[:source_code]
+      step_ = Step.new
+      step_.step_source = step_source_code
+      step_.article_id = '1'
+      step_.step_times = '1'
+      step_.save
+      # 保存所為r
+      # 成功したよっておくる
+      render :json => true
   end
 
   def sendArticle

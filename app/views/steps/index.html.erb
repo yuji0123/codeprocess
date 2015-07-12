@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Steps</h1>
+<!-- <h1>Listing Steps</h1>
 
 <table>
   <thead>
@@ -24,8 +24,141 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->
 
 <br>
 
+<div class="content">
+    <div class="pure-g" >
+    <!-- メインコンテンツ -->
+        <div class="l-box pure-u-3-4">
+            <div class="InBox">
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    コンテンツ概要
+                </h3>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要ここに概要
+                    </p>
+                </div>
+            </div>
+      <div class="InBox ContentTopMargin">
+        <div id="editor-div" style="height: 800px; z-index:1; ">ここがエディタになります</div>
+        <script src="/js/ace-builds-master/src/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+        window.onload = function() {
+        var editor = ace.edit("editor-div");
+        editor.setTheme("ace/theme/Gherkin");
+        editor.getSession().setMode("ace/mode/javascript");
+        };
+        </script>
+      </div>
+
+      <p>
+        <form style="text-align: center;">
+          <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Finish</button>
+          <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">WriteMore</button>
+        </form>
+      </p>
+
+
+        </div>
+        <!-- サイドバー -->
+        <div class="l-box pure-u-1-4">
+
+            <div class="InBox">
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    PickUP!!
+                </h3>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="#">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+            </div>
+
+            <div class="InBox ContentTopMargin">
+                <h3 class="content-subhead">
+                    <i class="fa fa-rocket"></i>
+                    PickUP!!
+                </h3>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+                <div class="ContentAll">
+                    <p class="PostName"><img src="http://placehold.jp/15x15.png" alt="">name</p>
+                    <h2><a href="#">タイトル</a></h2>
+                    <p class="ContentMargin">
+                        ここにテキストここにテキストここにテキストここにテキストここにテキスト
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+</div>
+
+
+
+<link rel="stylesheet" href="/css/style.css">
+<!-- 評価星 -->
+<link rel="stylesheet" href="/css/jquery.rateyo.css"/>
+<link href="/css/jquery.rateyo.min.css" rel="stylesheet" type="text/css">
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=1.7.1'></script>
+<script src="/js/jquery.rateyo.js"></script>
+<script src="/js/jquery.rateyo.min.js"></script>
+<script>/* Javascript */
+
+$(function () {
+
+  $("#rateYo").rateYo({
+    rating: 2,
+    fullStar: true
+  });
+});
+</script>
+<script>
+// Getter
+var normalFill = $("#rateYo").rateYo("option", "fullStar"); //returns true
+ 
+// Setter
+$("#rateYo").rateYo("option", "fullStar", true); //returns a jQuery Element
+</script>
 <%= link_to 'New Step', new_step_path %>

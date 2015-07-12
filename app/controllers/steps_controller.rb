@@ -1,5 +1,5 @@
 class StepsController < ApplicationController
-  before_action :set_step, only: [:show, :edit, :update, :destroy]
+  # before_action :set_step, only: [:show, :edit, :update, :destroy]
 
   # GET /steps
   # GET /steps.json
@@ -61,6 +61,12 @@ class StepsController < ApplicationController
     end
   end
 
+  def sendStep
+  end
+
+  def sendArticle
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_step
@@ -71,4 +77,5 @@ class StepsController < ApplicationController
     def step_params
       params.require(:step).permit(:article_id, :step_times, :step_source)
     end
+
 end

@@ -1,0 +1,63 @@
+.InBox{
+	border:  #2D3E50 solid;
+}
+
+.content-subhead{
+	background-color: #2D3E50;;
+	margin-top: 0px;
+	padding: 5px;
+	color: #fafafa;
+} 
+
+.ContentMargin{
+	margin:10px;
+}
+
+.pure-g{
+	margin-top: 60px;
+}
+
+.ReadMore{
+	text-align: right;
+}
+.ContentAll{
+	padding:0 5px;
+}
+
+.PostName{
+	float:right;
+}
+.PostName img{
+	margin-right: 10px;
+}
+
+.ContentTopMargin{
+	margin-top: 20px;
+}
+
+
+h2{
+	margin:5px;
+}
+p{
+	margin: 5px;
+}
+a{
+	color: #345E50;
+	text-decoration: none;
+}
+a:active, a:hover{
+	 color: #34e;
+}
+
+
+
+/*モーダル*/
+
+
+
+
+
+
+
+/* 星評価 */

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :steps
   resources :articles
   resources :users
+  match "read", :controller => :toppage, :action => :read, :via => :GET
   root to: 'toppage#index'
 
 

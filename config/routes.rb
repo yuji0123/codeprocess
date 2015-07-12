@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :ranks
+  match "steps/sendStep", :controller => :steps, :acion => :sendStep, :via => :POST
   resources :steps
   resources :articles
   resources :users
   root to: 'toppage#index'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

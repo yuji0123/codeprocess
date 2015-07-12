@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rank_id: MyString
+  user_id: MyString
+  all_pv: 1
+  average_readable: 1.5
+  average_benefit: 1.5
+  rank_pv: 1
+  rank_readable: 1
+  rank_benefit: 1
+  rank_delete_flag: 1
+
+two:
+  rank_id: MyString
+  user_id: MyString
+  all_pv: 1
+  average_readable: 1.5
+  average_benefit: 1.5
+  rank_pv: 1
+  rank_readable: 1
+  rank_benefit: 1
+  rank_delete_flag: 1

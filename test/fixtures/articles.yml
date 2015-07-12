@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  article_title: MyString
+  article_date: 2015-07-12
+  article_profile: MyText
+  article_id: MyText
+  artivle_pv: 1
+  article_readable: 1
+  article_benefit: 1
+  user_id: MyString
+  pickup_flag: 1
+  article_delete_flag: 1
+
+two:
+  article_title: MyString
+  article_date: 2015-07-12
+  article_profile: MyText
+  article_id: MyText
+  artivle_pv: 1
+  article_readable: 1
+  article_benefit: 1
+  user_id: MyString
+  pickup_flag: 1
+  article_delete_flag: 1

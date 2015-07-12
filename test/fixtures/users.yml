@@ -2,18 +2,16 @@
 
 one:
   user_date: 2015-07-12
-  user_id: MyString
   user_password: MyString
   user_adress: MyString
   user_name: MyString
   user_image: MyText
-  user_delete_flag: 1
+  user_delete_flag: false
 
 two:
   user_date: 2015-07-12
-  user_id: MyString
   user_password: MyString
   user_adress: MyString
   user_name: MyString
   user_image: MyText
-  user_delete_flag: 1
+  user_delete_flag: false

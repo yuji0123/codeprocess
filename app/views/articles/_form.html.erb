@@ -1,0 +1,49 @@
+<%= form_for(@article) do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :article_title %><br>
+    <%= f.text_area :article_title %>
+  </div>
+  <div class="field">
+    <%= f.label :article_profile %><br>
+    <%= f.text_area :article_profile %>
+  </div>
+  <div class="field">
+    <%= f.label :article_pv %><br>
+    <%= f.number_field :article_pv %>
+  </div>
+  <div class="field">
+    <%= f.label :article_readable %><br>
+    <%= f.number_field :article_readable %>
+  </div>
+  <div class="field">
+    <%= f.label :article_benefit %><br>
+    <%= f.number_field :article_benefit %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup_flag %><br>
+    <%= f.check_box :pickup_flag %>
+  </div>
+  <div class="field">
+    <%= f.label :article_delete_flag %><br>
+    <%= f.check_box :article_delete_flag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @rank.user_id %>
+</p>
+
+<p>
+  <strong>All pv:</strong>
+  <%= @rank.all_pv %>
+</p>
+
+<p>
+  <strong>Average readable:</strong>
+  <%= @rank.average_readable %>
+</p>
+
+<p>
+  <strong>Average benefit:</strong>
+  <%= @rank.average_benefit %>
+</p>
+
+<p>
+  <strong>Rank pv:</strong>
+  <%= @rank.rank_pv %>
+</p>
+
+<p>
+  <strong>Rank readable:</strong>
+  <%= @rank.rank_readable %>
+</p>
+
+<p>
+  <strong>Rank benefit:</strong>
+  <%= @rank.rank_benefit %>
+</p>
+
+<%= link_to 'Edit', edit_rank_path(@rank) %> |
+<%= link_to 'Back', ranks_path %>

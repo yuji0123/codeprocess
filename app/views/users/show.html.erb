@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User date:</strong>
+  <%= @user.user_date %>
+</p>
+
+<p>
+  <strong>User password:</strong>
+  <%= @user.user_password %>
+</p>
+
+<p>
+  <strong>User adress:</strong>
+  <%= @user.user_adress %>
+</p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @user.user_name %>
+</p>
+
+<p>
+  <strong>User image:</strong>
+  <%= @user.user_image %>
+</p>
+
+<p>
+  <strong>User delete flag:</strong>
+  <%= @user.user_delete_flag %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

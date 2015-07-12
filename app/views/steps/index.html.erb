@@ -58,10 +58,10 @@
       </div>
 
       <p>
-        <form style="text-align: center;">
+        <!-- <form style="text-align: center;"> -->
           <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Finish</button>
-          <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">WriteMore</button>
-        </form>
+          <button type="#" class="pure-button pure-input-1-2 pure-button-primary" id="submit_writeMore">WriteMore</button>
+        <!-- </form> -->
       </p>
 
 
@@ -146,8 +146,33 @@
 <script src="/js/jquery.rateyo.min.js"></script>
 <script>/* Javascript */
 
-$(function () {
 
+$(function () {
+  var listener_writeMore = document.getElementById("submit_writeMore").addEventListener("click", function (){
+  var source_code = document.getElementsByClassName("ace_line");
+  var send_source_code = '';
+  var i = source_code.length;
+  for (var j = 0; j < i; j++) {
+    c=source_code[j].textContent;
+    // if (!c) continue;
+    send_source_code += c + '\n';
+
+    }
+  console.log(send_source_code);
+  $.ajax({
+   type: "POST",
+   url: "/steps/sendStep",
+   data: "source_code=" + send_source_code,
+   success: function(){
+     alert( "Data Saved" );
+     // 【セーブしました）
+   },
+   error: function(){
+     alert('failed...');
+   }
+ });
+
+});
   $("#rateYo").rateYo({
     rating: 2,
     fullStar: true
